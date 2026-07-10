@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Wedding Invitation of K. Kamali Jenifer and B. Abishek. Join us to celebrate their holy matrimony on 22 August 2026.">
+    <meta name="keywords" content="Kamali Abishek Wedding, Christian Wedding Invitation, Wedding Invitation, Kamali weds Abishek">
+    <title>Kamali Jenifer & Abishek - Wedding Invitation</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Scroll Animations -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ==========================================
+         1. LOADER SCREEN
+         ========================================== -->
+    <div id="loader" class="loader-overlay">
+        <div class="loader-content">
+            <div class="loader-logo-container">
+                <!-- SVG Floral Laurel Emblem -->
+                <svg class="loader-logo" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" stroke="var(--color-gold)" stroke-width="1.5" fill="none" stroke-dasharray="283" stroke-dashoffset="283" />
+                    <path d="M 50 15 C 35 15, 25 30, 25 50 C 25 70, 35 85, 50 85 C 65 85, 75 70, 75 50 C 75 30, 65 15, 50 15 Z" stroke="var(--color-sage-green)" stroke-width="1" fill="none" stroke-dasharray="240" stroke-dashoffset="240" />
+                    <text x="50" y="55" class="loader-initials" text-anchor="middle">A & K</text>
+                </svg>
+            </div>
+            <h1 class="loader-names">
+                <span class="groom-name">K. Kamali Jenifer</span>
+                <span class="weds-text">Weds</span>
+                <span class="bride-name">B. Abishek</span>
+            </h1>
+            <div class="loader-progress"></div>
+        </div>
+    </div>
+
+    <!-- ==========================================
+         FLOATING ACTIONS (Music, Scroll to Top)
+         ========================================== -->
+    <div class="floating-controls">
+        <button id="music-btn" class="floating-btn" aria-label="Toggle Background Music">
+            <i class="fas fa-music"></i>
+            <div class="music-waves" id="music-waves">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <button id="back-to-top" class="floating-btn" aria-label="Back to Top">
+            <i class="fas fa-chevron-up"></i>
+        </button>
+    </div>
+
+    <!-- MAIN WEBSITE CONTENT -->
+    <div id="app-content" class="hidden-content">
+
+        <!-- ==========================================
+             2. HERO SECTION
+             ========================================== -->
+        <header id="hero" class="hero-section">
+            <!-- Falling Petals Canvas -->
+            <canvas id="petals-canvas"></canvas>
+            
+            <div class="hero-bg-parallax" style="background-image: url('assets/images/floral_watercolor_bg.png');"></div>
+            <div class="hero-overlay"></div>
+            
+            <div class="hero-content">
+                <div class="grace-text" data-aos="fade-down" data-aos-duration="1500">With the Grace of God</div>
+                <div class="hero-logo-divider" data-aos="zoom-in" data-aos-duration="1800">
+                    <span class="gold-line"></span>
+                    <i class="fas fa-cross cross-icon"></i>
+                    <span class="gold-line"></span>
+                </div>
+                
+                <h2 class="hero-names" data-aos="fade-up" data-aos-duration="1500">
+                    <span class="h-name animate-left">K. Kamali Jenifer</span>
+                    <span class="h-ampersand">&</span>
+                    <span class="h-name animate-right">B. Abishek</span>
+                </h2>
+                
+                <div class="hero-date" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500">
+                    <span class="date-sep"></span>
+                    <span class="date-txt">22 AUGUST 2026</span>
+                    <span class="date-sep"></span>
+                </div>
+                
+                <div class="hero-action-btn" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500">
+                    <a href="#bible-verse" class="btn btn-gold btn-scroll">View Invitation</a>
+                </div>
+            </div>
+            
+            <div class="scroll-down-indicator">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down animate-bounce"></i>
+            </div>
+        </header>
+
+        <!-- ==========================================
+             3. BIBLE VERSE SECTION
+             ========================================== -->
+        <section id="bible-verse" class="bible-verse-section section-padding">
+            <div class="container">
+                <div class="verse-wrapper" data-aos="zoom-in" data-aos-duration="1500">
+                    <!-- Elegant gold frame corners -->
+                    <div class="frame-corner top-left"></div>
+                    <div class="frame-corner top-right"></div>
+                    <div class="frame-corner bottom-left"></div>
+                    <div class="frame-corner bottom-right"></div>
+                    
+                    <div class="verse-content">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        <p class="verse-text">
+                            "Therefore what God has joined together,<br>let no one separate."
+                        </p>
+                        <span class="verse-reference">Mark 10:9</span>
+                        <i class="fas fa-quote-right quote-icon"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             4. INVITATION SECTION
+             ========================================== -->
+        <section id="invitation" class="invitation-section section-padding">
+            <div class="container text-center">
+                <div class="floral-divider-top" data-aos="fade-down" data-aos-duration="1200">
+                    <img src="assets/images/floral_watercolor_bg.png" alt="Floral decor" class="decorative-leaves-top">
+                </div>
+                
+                <h3 class="section-subtitle" data-aos="fade-up" data-aos-duration="1200">Together with their families</h3>
+                <h2 class="section-title" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">Save Our Date</h2>
+                
+                <div class="invitation-body" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
+                    <p class="invite-lead">Request the honour of your presence at the celebration of their marriage</p>
+                    
+                    <div class="couple-names-wrap">
+                        <span class="script-name groom">Kamali Jenifer</span>
+                        <span class="script-and">and</span>
+                        <span class="script-name bride">Abishek</span>
+                    </div>
+                    
+                    <p class="invite-footer">On Saturday, the twenty-second of August<br>Two Thousand and Twenty-Six</p>
+                </div>
+                
+                <div class="floral-divider-bottom" data-aos="fade-up" data-aos-duration="1200">
+                    <img src="assets/images/floral_watercolor_bg.png" alt="Floral decor" class="decorative-leaves-bottom">
+                </div>
+            </div>
+        </section>
+
+ <!-- ==========================================
+             6. COUNTDOWN SECTION
+             ========================================== -->
+        <section id="countdown" class="countdown-section section-padding text-center">
+            <!-- Glassmorphic panel -->
+            <div class="container">
+                <div class="countdown-container" data-aos="zoom-in" data-aos-duration="1500">
+                    <h2 class="section-title white-text">The Countdown</h2>
+                    <p class="countdown-tagline">Counting down the seconds until we walk down the aisle</p>
+                    
+                    <div class="countdown-grid" id="timer">
+                        <div class="countdown-card">
+                            <span class="countdown-num" id="days">00</span>
+                            <span class="countdown-label">Days</span>
+                        </div>
+                        <div class="countdown-card">
+                            <span class="countdown-num" id="hours">00</span>
+                            <span class="countdown-label">Hours</span>
+                        </div>
+                        <div class="countdown-card">
+                            <span class="countdown-num" id="minutes">00</span>
+                            <span class="countdown-label">Minutes</span>
+                        </div>
+                        <div class="countdown-card">
+                            <span class="countdown-num" id="seconds">00</span>
+                            <span class="countdown-label">Seconds</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             7. EVENTS SECTION
+             ========================================== -->
+        <section id="events" class="events-section section-padding">
+            <div class="container">
+                <h2 class="section-title text-center" data-aos="fade-up">Wedding Events</h2>
+                <p class="section-subtitle text-center" data-aos="fade-up" data-aos-delay="200">Please join us for the celebrations</p>
+                
+                <div class="events-grid">
+                    <!-- Event 1: Engagement -->
+                    <div class="event-card" data-aos="fade-up" data-aos-duration="1200">
+                        <div class="event-img-wrap">
+                            <img src="assets/images/wedding_rings.png" alt="Engagement Ceremony" class="event-img">
+                            <div class="event-overlay"></div>
+                        </div>
+                        <div class="event-details">
+                            <h3>The Engagement</h3>
+                            <div class="event-meta">
+                                <p><i class="far fa-calendar-alt"></i> Friday, 21 August 2026</p>
+                                <p><i class="far fa-clock"></i> 3:00 PM onwards</p>
+                                <p><i class="fas fa-map-marker-alt"></i>  Vijayaachampadu, Tirunelveli</p>
+                            </div>
+                            <div class="event-actions">
+                                <a href="https://maps.app.goo.gl/wxhfJuDCTaoMDnbo9?g_st=aw" target="_blank" rel="noopener" class="btn btn-sage"><i class="fas fa-map-marked-alt"></i> View Map</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 2: Wedding Ceremony -->
+                    <div class="event-card featured" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+                        <div class="event-tag">The Big Day</div>
+                        <div class="event-img-wrap">
+                            <img src="assets/images/wedding_church.png" alt="Wedding Ceremony" class="event-img">
+                            <div class="event-overlay"></div>
+                        </div>
+                        <div class="event-details">
+                            <h3>Holy Matrimony</h3>
+                            <div class="event-meta">
+                                <p><i class="far fa-calendar-alt"></i> Saturday, 22 August 2026</p>
+                                <p><i class="far fa-clock"></i> 10:30 AM onwards</p>
+                                <p><i class="fas fa-map-marker-alt"></i> St. Andrew's Church, Tirunelveli</p>
+                            </div>
+                            <div class="event-actions">
+                                <a href="https://maps.app.goo.gl/wxhfJuDCTaoMDnbo9?g_st=aw" target="_blank" rel="noopener" class="btn btn-gold"><i class="fas fa-map-marked-alt"></i> View Map</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Event 3: Reception -->
+                    <div class="event-card" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1200">
+                        <div class="event-img-wrap">
+                            <img src="assets/images/wedding_reception.png" alt="Reception Ceremony" class="event-img">
+                            <div class="event-overlay"></div>
+                        </div>
+                        <div class="event-details">
+                            <h3>The Reception</h3>
+                            <div class="event-meta">
+                                <p><i class="far fa-calendar-alt"></i> Saturday, 22 August 2026</p>
+                                <p><i class="far fa-clock"></i> 7:00 PM onwards</p>
+                                <p><i class="fas fa-map-marker-alt"></i>Nearby  St. Peter’s Church, Tirunelveli</p>
+                            </div>
+                            <div class="event-actions">
+                                <a href="https://maps.app.goo.gl/pnypHmXT2uksYMhcA?g_st=aw" target="_blank" rel="noopener" class="btn btn-sage"><i class="fas fa-map-marked-alt"></i> View Map</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ==========================================
+             11. LOCATION SECTION
+             ========================================== -->
+        <section id="location" class="location-section section-padding">
+            <div class="container text-center">
+                <h2 class="section-title" data-aos="fade-up">The Venue Location</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="200">St. Andrew's Church, Tirunelveli</p>
+                
+                <div class="map-wrapper" data-aos="zoom-in" data-aos-duration="1500">
+                    <!-- Embedded Google Map -->
+                    <iframe 
+                        id="google-map"
+                        src="https://www.google.com/maps?q=St+Andrew's+Church+Vijaya+Achampadu+Tirunelveli&output=embed" 
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="St. Andrew's Church Map Location">
+                    </iframe>
+                </div>
+                
+                <div class="location-details" data-aos="fade-up" data-aos-duration="1200">
+                    <p class="venue-address"><i class="fas fa-map-pin"></i> Church Street, Vijayaachampadu, Tirunelveli, Tamil Nadu 627652</p>
+                    <a href="https://maps.app.goo.gl/wxhfJuDCTaoMDnbo9?g_st=aw" target="_blank" rel="noopener" class="btn btn-gold btn-large"><i class="fas fa-direction"></i> Get Directions</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             12. BLESSINGS SECTION
+             ========================================== -->
+        <section id="blessings" class="blessings-section section-padding">
+            <div class="container text-center">
+                <div class="blessings-card" data-aos="zoom-in" data-aos-duration="1500">
+                    <div class="blessings-border-floral"></div>
+                    <div class="blessings-inner">
+                        <i class="fas fa-heart blessings-heart"></i>
+                        <p class="blessings-msg">We are blessed to have you<br>share in our joy.</p>
+                        <span class="blessings-initials">A & K</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================
+             13. FOOTER
+             ========================================== -->
+        <footer class="footer-section">
+            <div class="container text-center">
+                <h2 class="footer-title">K. Kamali Jenifer & B. Abishek</h2>
+                <p class="footer-date">22 AUGUST 2026</p>
+                <div class="footer-divider"></div>
+                <p class="footer-credit">Made with Love <i class="fas fa-heart"></i></p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- ==========================================
+         SCRIPT IMPORTS
+         ========================================== -->
+    <!-- AOS Scroll Animations Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
