@@ -992,7 +992,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .events-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 30px;
     margin-top: 40px;
 }
